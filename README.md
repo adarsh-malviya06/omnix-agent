@@ -53,41 +53,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3. Environment Configuration
-
-Copy the example environment template:
-```bash
-cp .env.example .env
-```
-
-Configure `.env` as needed:
-```ini
-ENVIRONMENT=development
-DEBUG=true
-APP_NAME="OMNIX Agent"
-APP_VERSION="1.0.0"
-API_HOST=127.0.0.1
-API_PORT=8000
-STREAMLIT_PORT=8501
-
-# Groq LLM API Key (for live AI assistant reasoning & RAG synthesis)
-GROQ_API_KEY=gsk_your_groq_api_key_here
-LLM_MODEL=llama-3.3-70b-versatile
-LLM_TEMPERATURE=0.1
-
-# SQLite Database
-DATABASE_URL=sqlite:///./omnix.db
-
-# Vector Database (ChromaDB)
-CHROMA_PERSIST_DIRECTORY=./chroma_db
-EMBEDDING_MODEL_NAME=all-MiniLM-L6-v2
-
-# Business Rules & Spending Limits
-DEFAULT_CURRENCY=INR
-MAX_AUTO_APPROVAL_LIMIT=75000.00
-HIGH_VALUE_THRESHOLD=400000.00
-```
-
 ### 4. Initialize Database and Seed Demo Data
 
 Run the database seeder to initialize all relational tables and load realistic wholesale/retail demo data:
