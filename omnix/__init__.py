@@ -1,0 +1,6 @@
+"""
+OMNIX Agent - Multi-Agent Procurement & Inventory Intelligence Platform
+Root package initialization.
+"""
+
+__version__ = "1.0.0"
